@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails ticketee: development" uuid="a19c5fd5-77ec-4c92-9b11-4fb21521f5e7">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails ticketee: test" uuid="b30df3f9-604d-47d7-a3f1-b38191e51e3c">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails ticketee: production" uuid="a7dda026-36f3-4167-b630-463a7eb5a00f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
