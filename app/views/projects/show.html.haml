@@ -1,5 +1,9 @@
-%h3
+%p
+  %strong Name:
   = @project.name
+  %p
+    %strong Description:
+    = @project.description
 
   = title(@project.name, "Projects")
   = link_to "Edit Project",edit_project_path(@project)
@@ -8,3 +12,5 @@
     project_path(@project),
     method: :delete,
     data: { confirm: "Are you sure you want to delete this project?" }
+
+  = link_to "New Ticket" ,new_project_ticket_path(@project)

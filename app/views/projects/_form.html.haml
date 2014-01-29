@@ -1,20 +1,21 @@
 %h3
   New project:
 
-  = form_for @project do |f|
-    - if @project.errors.any?
-      #error_explanation
+= form_for @project do |f|
+  - if @project.errors.any?
+    #error_explanation
       - pluralize(@project.errors.count,'error')
       %h3
       Prohibited to save the project:
       %ul
-        - @project.errors.full_messages.each do |msg|
-          %li= msg
-
-    %p
+      - @project.errors.full_messages.each do |msg|
+        %li
+          = msg
+  %p
     =f.label :name
     =f.text_field :name
     =f.label :description
     =f.text_field :description
-    %p
+  %p
     =f.submit
+
