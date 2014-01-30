@@ -1,5 +1,8 @@
 class ProjectsController < ApplicationController
 
+  http_basic_authenticate_with name:"svg",password:"123",only: :create
+
+
   before_action :set_project, only: [:show,:edit,
                                      :update,
                                      :destroy]
