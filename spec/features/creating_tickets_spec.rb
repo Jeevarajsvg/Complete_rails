@@ -19,4 +19,5 @@ feature "Creating Tickets" do
     expect(page).to have_content("Title can't be blank")
     expect(page).to have_content("Description can't be blank")
   end
+
 end

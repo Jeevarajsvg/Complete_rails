@@ -1,7 +1,6 @@
 class ProjectsController < ApplicationController
 
-  http_basic_authenticate_with name:"svg",password:"123",only: :create
-
+  #http_basic_authenticate_with name:"svg",password:"123",only: :create
 
   before_action :set_project, only: [:show,:edit,
                                      :update,
@@ -48,8 +47,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     @project.destroy
     flash[:notice] = "Project has been Deleted"
-    redirect_to projects_path
-  end
+    redirect_to projects_path  end
 
 private
   def project_params

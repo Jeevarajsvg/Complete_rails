@@ -9,6 +9,10 @@ group :production do
 end
 gem 'bootstrap-sass'
 
+
+gem 'pry-debugger'
+gem 'pry-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -49,7 +53,7 @@ gem 'haml'
 
 
 # Use ActiveModel has_secure_password
- gem 'bcrypt-ruby', '~> 3.1.2'
+gem "bcrypt-ruby"
 
 # Use unicorn as the app server
 # gem 'unicorn'
